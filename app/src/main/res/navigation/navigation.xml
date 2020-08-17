@@ -9,5 +9,24 @@
         android:id="@+id/fragmentTitle"
         android:name="com.jonbowring.papercalculator.FragmentTitle"
         android:label="fragment_title"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_fragmentTitle_to_fragmentMultiplication"
+            app:destination="@id/fragmentMultiplication"
+            app:popUpTo="@id/fragmentTitle" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMultiplication"
+        android:name="com.jonbowring.papercalculator.FragmentMultiplication"
+        android:label="fragment_multiplication"
+        tools:layout="@layout/fragment_multiplication" >
+        <argument
+            android:name="num1"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="num2"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.jonbowring.papercalculator.databinding.FragmentTitleBinding
 
 class FragmentTitle : Fragment() {
@@ -27,8 +28,9 @@ class FragmentTitle : Fragment() {
 
         // Add an onclick listener to the multiply button
         binding.multiply.setOnClickListener { view: View ->
-            // TODO add navigation to the multiplication fragment
-            // view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+
+            // On multiply click send the two numbers to the multiply fragment
+            view.findNavController().navigate(FragmentTitleDirections.actionFragmentTitleToFragmentMultiplication(binding.number1.text.toString().toInt(), binding.number2.text.toString().toInt()))
         }
 
         // Return the inflated binding

@@ -6,20 +6,276 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/temp_hello_world"
-            android:layout_width="wrap_content"
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hello_blank_fragment"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@tools:sample/lorem" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent">
 
+            <TableRow
+                android:id="@+id/MultiRowNum1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/MultiRowNum2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/MultiRowWork1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/MultiRowWork2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/MultiRowAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+                <TextView
+                    style="@style/NumberCell"
+                    android:text="0"
+                    tools:text="0" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/MultiShowMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_me"
+            app:layout_constraintBaseline_toBaselineOf="@+id/MultiCheckIt"
+            app:layout_constraintEnd_toStartOf="@+id/MultiCheckIt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/MultiCheckIt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_it"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/MultiShowMe"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
 

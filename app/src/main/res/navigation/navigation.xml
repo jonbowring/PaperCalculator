@@ -22,11 +22,9 @@
         tools:layout="@layout/fragment_multiplication" >
         <argument
             android:name="num1"
-            app:argType="integer"
-            android:defaultValue="0" />
+            app:argType="string" />
         <argument
             android:name="num2"
-            app:argType="integer"
-            android:defaultValue="0" />
+            app:argType="string" />
     </fragment>
 </navigation>

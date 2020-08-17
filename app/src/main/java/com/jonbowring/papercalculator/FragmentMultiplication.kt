@@ -11,6 +11,10 @@ import com.jonbowring.papercalculator.databinding.FragmentMultiplicationBinding
 
 class FragmentMultiplication : Fragment() {
 
+    private var num1: Int = 0
+    private var num2: Int = 0
+    private var answer: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -24,17 +28,27 @@ class FragmentMultiplication : Fragment() {
         // Get and inflate the fragment binding
         val binding: FragmentMultiplicationBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_multiplication, container, false)
 
-        // Get the numbers passed into the fragment
-        val args = FragmentMultiplicationArgs.fromBundle(requireArguments())
-
-        // TODO delete the below test
-        Toast.makeText(context,
-        "${args.num1} * ${args.num2}",
-            Toast.LENGTH_LONG
-            ).show()
+        // Draw the layout screen
+        drawLayout()
 
         // Return the binding
         return binding.root
+    }
+
+    fun drawLayout() {
+
+        // Get the numbers passed into the fragment
+        val args = FragmentMultiplicationArgs.fromBundle(requireArguments())
+
+        // Calculate the answer
+        num1 = args.num1.toInt()
+        num2 = args.num2.toInt()
+        answer = num1 * num2
+
+        // Calculate the required number of cells
+        val numRows = args.num2.length
+        val numCols = answer.toString().length
+
     }
 
 }

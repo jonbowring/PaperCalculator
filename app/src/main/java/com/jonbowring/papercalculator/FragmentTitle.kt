@@ -30,7 +30,7 @@ class FragmentTitle : Fragment() {
         binding.multiply.setOnClickListener { view: View ->
 
             // On multiply click send the two numbers to the multiply fragment
-            view.findNavController().navigate(FragmentTitleDirections.actionFragmentTitleToFragmentMultiplication(binding.number1.text.toString().toInt(), binding.number2.text.toString().toInt()))
+            view.findNavController().navigate(FragmentTitleDirections.actionFragmentTitleToFragmentMultiplication(binding.number1.text.toString(), binding.number2.text.toString()))
         }
 
         // Return the inflated binding

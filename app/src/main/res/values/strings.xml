@@ -5,4 +5,6 @@
     <string name="number1">Number 1</string>
     <string name="number2">Number 2</string>
     <string name="multiply">Multiply</string>
+    <string name="check_it">Check It!</string>
+    <string name="show_me">Show Me</string>
 </resources>
